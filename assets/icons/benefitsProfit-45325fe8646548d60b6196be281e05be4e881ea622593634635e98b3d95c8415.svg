@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="200" height="200" viewBox="0 0 200 200">
+    <defs>
+        <circle id="a" cx="100" cy="100" r="100"/>
+        <rect id="c" width="184" height="120" x="8" y="40" rx="8"/>
+        <circle id="d" cx="74.5" cy="104" r="2"/>
+        <circle id="e" cx="125.5" cy="108" r="2"/>
+        <path id="f" d="M8 63V47.996A7.99 7.99 0 0 1 15.995 40h168.01A7.996 7.996 0 0 1 192 47.996V63"/>
+        <path id="g" d="M8 63V47.996A7.99 7.99 0 0 1 15.995 40h5.335m157.47 0h5.205A7.996 7.996 0 0 1 192 47.996V63"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <g>
+            <mask id="b" fill="#fff">
+                <use xlink:href="#a"/>
+            </mask>
+            <use fill="#FFF" xlink:href="#a"/>
+            <circle cx="100" cy="100" r="99.5" stroke="#A2B6C7"/>
+            <g mask="url(#b)">
+                <use fill="#FFF" xlink:href="#c"/>
+                <rect width="183" height="119" x="8.5" y="40.5" stroke="#B5BCC5" rx="8"/>
+            </g>
+            <path fill="#F2F8FC" d="M28 67h149v78H28z" mask="url(#b)" style="mix-blend-mode:multiply"/>
+            <path stroke="#B5BCC5" stroke-linecap="round" d="M23.5 63.5v81M74.5 63.5v81M125.5 63.5v81M23.5 145h153M23.5 118h153M23.5 91h153" mask="url(#b)"/>
+            <path stroke="#4C6F8C" stroke-linecap="round" d="M23.5 144.5l51.358-40.305 50.591 3.998L175.5 64.5" mask="url(#b)"/>
+            <path stroke="#4C6F8C" stroke-linecap="round" d="M165.002 73.091l6.52-11.489 6.518 11.49" mask="url(#b)" transform="rotate(53 171.521 67.347)"/>
+            <g mask="url(#b)">
+                <use fill="#F8F8F9" xlink:href="#d"/>
+                <circle cx="74.5" cy="104" r="1.5" stroke="#4C6F8C"/>
+            </g>
+            <g mask="url(#b)">
+                <use fill="#F8F8F9" xlink:href="#e"/>
+                <circle cx="125.5" cy="108" r="1.5" stroke="#4C6F8C"/>
+            </g>
+            <circle cx="100" cy="100" r="98.5" stroke="#829AAF" stroke-width="3" mask="url(#b)"/>
+        </g>
+        <g>
+            <use fill="#FFF" xlink:href="#f"/>
+            <path stroke="#B5BCC5" d="M8.5 62.5h183V47.996a7.496 7.496 0 0 0-7.495-7.496H15.995A7.49 7.49 0 0 0 8.5 47.996V62.5z"/>
+        </g>
+        <g>
+            <use fill="#FFF" xlink:href="#g"/>
+            <path stroke="#B5BCC5" d="M8.5 61.14L20.462 40.5h-4.467A7.49 7.49 0 0 0 8.5 47.996V61.14zM179.663 40.5L191.5 61.124V47.996a7.496 7.496 0 0 0-7.495-7.496h-4.342z"/>
+        </g>
+    </g>
+</svg>

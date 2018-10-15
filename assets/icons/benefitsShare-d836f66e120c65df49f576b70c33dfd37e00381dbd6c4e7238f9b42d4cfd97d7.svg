@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="200" height="200" viewBox="0 0 200 200">
+    <defs>
+        <circle id="a" cx="100" cy="100" r="100"/>
+        <circle id="c" cx="100" cy="100" r="6"/>
+        <circle id="d" cx="55" cy="50" r="6"/>
+        <circle id="e" cx="48" cy="82" r="4"/>
+        <circle id="f" cx="127" cy="61" r="4"/>
+        <circle id="g" cx="84" cy="39" r="4"/>
+        <circle id="h" cx="93" cy="171" r="4"/>
+        <circle id="i" cx="148" cy="154" r="4"/>
+        <circle id="j" cx="63" cy="145" r="3"/>
+        <circle id="k" cx="121" cy="157" r="3"/>
+        <circle id="l" cx="115" cy="33" r="3"/>
+        <circle id="m" cx="196" cy="107" r="3"/>
+        <circle id="n" cx="154" cy="123" r="5"/>
+        <circle id="o" cx="133" cy="21" r="5"/>
+        <circle id="p" cx="28" cy="122" r="5"/>
+        <circle id="q" cx="161" cy="81" r="5"/>
+        <circle id="r" cx="191" cy="58" r="6"/>
+        <circle id="s" cx="100" cy="100" r="100"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd" transform="matrix(1 0 0 -1 0 200)">
+        <mask id="b" fill="#fff">
+            <use xlink:href="#a"/>
+        </mask>
+        <use fill="#FFF" xlink:href="#a"/>
+        <circle cx="100" cy="100" r="98.5" stroke="#829AAF" stroke-width="3"/>
+        <path stroke="#B5BCC5" stroke-linecap="square" d="M133.5 21.5l56 38" mask="url(#b)"/>
+        <path stroke="#4C6F8C" stroke-linecap="square" d="M99.5 99.5l91-41M99.5 99.5l-45-50" mask="url(#b)"/>
+        <path stroke="#B5BCC5" stroke-linecap="square" d="M100.5 100.5l-16-61" mask="url(#b)"/>
+        <path stroke="#4C6F8C" stroke-linecap="square" d="M99.5 98.5l16-67" mask="url(#b)"/>
+        <path stroke="#B5BCC5" stroke-linecap="square" d="M100.5 99.5l27-38M100.5 99.5l54 23M160.5 80.5l30-21" mask="url(#b)"/>
+        <path stroke="#4C6F8C" stroke-linecap="square" d="M196.5 106.5l-7-48M148.5 154.5l-49-55" mask="url(#b)"/>
+        <path stroke="#B5BCC5" stroke-linecap="square" d="M121.5 156.5l-22-56" mask="url(#b)"/>
+        <path stroke="#4C6F8C" stroke-linecap="square" d="M93.5 171.5l6-71" mask="url(#b)"/>
+        <path stroke="#B5BCC5" stroke-linecap="square" d="M62.5 145.5l37-45" mask="url(#b)"/>
+        <path stroke="#4C6F8C" stroke-linecap="square" d="M27.5 121.5l73-21" mask="url(#b)"/>
+        <path stroke="#B5BCC5" stroke-linecap="square" d="M47.5 82.5l53 18" mask="url(#b)"/>
+        <g mask="url(#b)">
+            <use fill="#F2F8FC" xlink:href="#c"/>
+            <circle cx="100" cy="100" r="5.5" stroke="#4C6F8C"/>
+        </g>
+        <g mask="url(#b)">
+            <use fill="#F2F8FC" xlink:href="#d"/>
+            <circle cx="55" cy="50" r="5.5" stroke="#4C6F8C"/>
+        </g>
+        <g mask="url(#b)">
+            <use fill="#F2F8FC" xlink:href="#e"/>
+            <circle cx="48" cy="82" r="3.5" stroke="#B5BCC5"/>
+        </g>
+        <g mask="url(#b)">
+            <use fill="#F2F8FC" xlink:href="#f"/>
+            <circle cx="127" cy="61" r="3.5" stroke="#B5BCC5"/>
+        </g>
+        <g mask="url(#b)">
+            <use fill="#F2F8FC" xlink:href="#g"/>
+            <circle cx="84" cy="39" r="3.5" stroke="#B5BCC5"/>
+        </g>
+        <g mask="url(#b)">
+            <use fill="#F2F8FC" xlink:href="#h"/>
+            <circle cx="93" cy="171" r="3.5" stroke="#4C6F8C"/>
+        </g>
+        <g mask="url(#b)">
+            <use fill="#F2F8FC" xlink:href="#i"/>
+            <circle cx="148" cy="154" r="3.5" stroke="#4C6F8C"/>
+        </g>
+        <g mask="url(#b)">
+            <use fill="#F2F8FC" xlink:href="#j"/>
+            <circle cx="63" cy="145" r="2.5" stroke="#B5BCC5"/>
+        </g>
+        <g mask="url(#b)">
+            <use fill="#F2F8FC" xlink:href="#k"/>
+            <circle cx="121" cy="157" r="2.5" stroke="#B5BCC5"/>
+        </g>
+        <g mask="url(#b)">
+            <use fill="#F2F8FC" xlink:href="#l"/>
+            <circle cx="115" cy="33" r="2.5" stroke="#4C6F8C"/>
+        </g>
+        <g mask="url(#b)">
+            <use fill="#F2F8FC" xlink:href="#m"/>
+            <circle cx="196" cy="107" r="2.5" stroke="#4C6F8C"/>
+        </g>
+        <g mask="url(#b)">
+            <use fill="#F2F8FC" xlink:href="#n"/>
+            <circle cx="154" cy="123" r="4.5" stroke="#B5BCC5"/>
+        </g>
+        <g mask="url(#b)">
+            <use fill="#F2F8FC" xlink:href="#o"/>
+            <circle cx="133" cy="21" r="4.5" stroke="#B5BCC5"/>
+        </g>
+        <g mask="url(#b)">
+            <use fill="#F2F8FC" xlink:href="#p"/>
+            <circle cx="28" cy="122" r="4.5" stroke="#4C6F8C"/>
+        </g>
+        <g mask="url(#b)">
+            <use fill="#F2F8FC" xlink:href="#q"/>
+            <circle cx="161" cy="81" r="4.5" stroke="#B5BCC5"/>
+        </g>
+        <g mask="url(#b)">
+            <use fill="#F2F8FC" xlink:href="#r"/>
+            <circle cx="191" cy="58" r="5.5" stroke="#4C6F8C"/>
+        </g>
+        <circle cx="100" cy="100" r="99.5" stroke="#B5BCC5"/>
+    </g>
+</svg>

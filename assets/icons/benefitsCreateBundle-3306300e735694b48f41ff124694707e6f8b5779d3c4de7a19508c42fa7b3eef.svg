@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="200" height="200" viewBox="0 0 200 200">
+    <defs>
+        <circle id="a" cx="100" cy="100" r="100"/>
+        <rect id="b" width="144" height="120" x="28" y="40" rx="8"/>
+        <rect id="c" width="38" height="8" x="42" y="141" rx="2"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <use fill="#FFF" xlink:href="#a"/>
+        <circle cx="100" cy="100" r="99.5" stroke="#A2B6C7"/>
+        <use fill="#FFF" xlink:href="#b"/>
+        <rect width="143" height="119" x="28.5" y="40.5" stroke="#B5BCC5" rx="8"/>
+        <path fill="#F2F8FC" d="M33 50.005A3.996 3.996 0 0 1 36.992 46H172v108.995a3.996 3.996 0 0 1-3.992 4.005H33V50.005z" style="mix-blend-mode:multiply"/>
+        <use fill="#FFF" xlink:href="#c"/>
+        <rect width="37" height="7" x="42.5" y="141.5" stroke="#4C6F8C" rx="2"/>
+        <path fill="#4C6F8C" d="M122 112v12l3-3 2.5 5h1s.646-.65.5-1c-.688-1.65-2.5-5-2.5-5h3.5l-8-8z"/>
+        <path stroke="#4C6F8C" stroke-linecap="round" d="M146 105h5M43 105h5M148.5 102.5v5M43 112h112M42.5 111.5v1M155.5 111.5v1M145.5 111.5v1M125.5 111.5v1M121.5 111.5v1M91.5 111.5v1M85.5 111.5v1M64.5 111.5v1M75.5 111.5v1M127 105h5M122 105h2M86 105h4M65 105h6M92 105h8M76 105h4M42 56h34M42 66h119M42 69h117M42 72h118M42 75h119M42 78h115M42 81.5h117M42 84.5h67"/>
+        <circle cx="100" cy="100" r="98.5" stroke="#829AAF" stroke-width="3"/>
+    </g>
+</svg>

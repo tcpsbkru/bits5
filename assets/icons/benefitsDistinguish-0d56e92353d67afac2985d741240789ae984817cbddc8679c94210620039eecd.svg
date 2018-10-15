@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="200" height="200" viewBox="0 0 200 200">
+    <defs>
+        <circle id="a" cx="100" cy="100" r="100"/>
+        <rect id="c" width="78" height="78" rx="3.2"/>
+        <rect id="d" width="78" height="78" rx="3.2"/>
+        <rect id="e" width="98" height="98" rx="4"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <mask id="b" fill="#fff">
+            <use xlink:href="#a"/>
+        </mask>
+        <use fill="#FFF" xlink:href="#a"/>
+        <circle cx="100" cy="100" r="99.5" stroke="#D4D7DE"/>
+        <g mask="url(#b)">
+            <g transform="translate(-3 85)">
+                <use fill="#FFF" xlink:href="#c"/>
+                <rect width="77" height="77" x=".5" y=".5" stroke="#B5BCC5" rx="3.2"/>
+            </g>
+            <path stroke="#B5BCC5" stroke-linecap="round" stroke-linejoin="round" d="M70 120.303L63.3 129l-6.03-3.606-7.37-7.283-6.7.778-6.03-4.808-7.37 7.353-6.7 1.414L15.73 108l-6.03 6.08L3 126.668"/>
+            <path stroke="#B5BCC5" stroke-linecap="round" d="M3 96.5h30M3 138.5h11M23 138.5h6M7 141.5h10M23 141.5h6M3 144.5h12M25 144.5h4M3 147.5h10M25 147.5h4M3 150.5h13M26 150.5h3M43 138.5h11M64 138.5h6M43 141.5h10M64 141.5h6M43 144.5h12M65 144.5h4M43 147.5h10M65 147.5h4M43 150.5h13M66 150.5h3M55 96.5h14"/>
+        </g>
+        <g mask="url(#b)">
+            <g transform="translate(125 85)">
+                <use fill="#FFF" xlink:href="#d"/>
+                <rect width="77" height="77" x=".5" y=".5" stroke="#B5BCC5" rx="3.2"/>
+            </g>
+            <path stroke="#B5BCC5" stroke-linecap="round" stroke-linejoin="round" d="M131 114.6l6.7-6.545 6.03 1.309 7.37 9.89 6.7-11.2 6.03-3.054 7.37 4.836 6.7 10.146 7.37 7.273L191.3 129l6.7-4.945"/>
+            <path stroke="#B5BCC5" stroke-linecap="round" d="M131 96.5h30M131 137.5h11M151 138.5h6M131 140.5h10M151 141.5h6M131 144.5h12M153 144.5h4M131 147.5h10M153 147.5h4M131 150.5h13M154 150.5h3M171 138.5h11M192 137.5h6M171 141.5h10M192 140.5h6M171 144.5h12M193 143.5h4M171 147.5h10M193 147.5h4M171 150.5h13M194 150.5h3M183 96.5h14"/>
+        </g>
+        <g mask="url(#b)">
+            <g transform="translate(51 45)">
+                <use fill="#FFF" xlink:href="#e"/>
+                <rect width="97" height="97" x=".5" y=".5" stroke="#B5BCC5" rx="4"/>
+            </g>
+            <path fill="#F2F8FC" d="M56 52.007C56 50.9 56.896 50 58.007 50H148v89.993a2.005 2.005 0 0 1-2.007 2.007H56V52.007z" style="mix-blend-mode:multiply"/>
+            <path stroke="#4C6F8C" stroke-linecap="round" stroke-linejoin="round" d="M58 102.818L66.4 98l7.56-1.636L83.2 104l8.4-6 7.56 3.818 9.24-24.545 8.4 15.818L126.04 74l7.56-2.182L142 68"/>
+            <path stroke="#4C6F8C" stroke-linecap="round" d="M58 60h38M58 112h14M84 112h7M58 116h12M84 116h7M58 120h15M86 120h5M58 124h13M86 124h5M58 128h16M87 128h4M109 112h14M135 112h7M109 116h12M135 116h7M109 120h15M137 120h5M109 124h13M137 124h5M109 128h16M138 128h4M124 60h18"/>
+        </g>
+        <circle cx="100" cy="100" r="98.5" stroke="#829AAF" stroke-width="3" mask="url(#b)"/>
+    </g>
+</svg>

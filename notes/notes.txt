@@ -1,0 +1,448 @@
+
+Zaichik1.posholgulyat
+Zaichik1.posholGulyat
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+DROP TABLE IF EXISTS `bits`;
+CREATE TABLE IF NOT EXISTS `bits` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `user_id` int(11) NOT NULL,
+  `expected_satoshis` bigint(20) NOT NULL,
+  `actual_satoshis` bigint(20) NOT NULL,
+  `owed` bigint(20) NOT NULL,
+  `payment` enum('new','pending','confirmed_wrong_amount','confirmed','complete','unconfirmed') COLLATE latin1_general_ci NOT NULL,
+  `email_sent` enum('not_sent','sent','sent_wrong_amount') COLLATE latin1_general_ci NOT NULL,
+  `address` varchar(255) COLLATE latin1_general_ci NOT NULL,
+  `cus_address` varchar(255) COLLATE latin1_general_ci NOT NULL,
+  `paytime` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci AUTO_INCREMENT=11 ;
+
+--
+-- Dumping data for table `bits`
+--
+
+INSERT INTO `bits` (`id`, `user_id`, `expected_satoshis`, `actual_satoshis`, `owed`, `payment`, `email_sent`, `address`, `cus_address`, `paytime`) VALUES
+(1, 0, 0, 0, 0, 'new', 'not_sent', 'mnJph1HXKQggfJDSUEJScUFUHFrkTjtXTp', '', '2018-04-12 23:26:35'),
+(2, 0, 0, 0, 0, 'new', 'not_sent', 'mtuKF9hCdYppyrrL8HUb6HEEdvvWvgTW9w', '', '2018-04-12 23:26:35'),
+(3, 0, 0, 0, 0, 'new', 'not_sent', 'n4DZP8BKhk7vedDjPokZDEFXFaJUWdAhEX', '', '2018-04-10 20:11:22');
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Database	db716215776
+Host name	db716215776.db.1and1.com
+Port		3306
+User name	dbo716215776
+Password:	Zaichik1!
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+FTP
+Server:		home715328321.1and1-data.host
+Port:		22
+Protocol:	SFTP
+User name:	u91696694
+Password:	Zaichik1.posholgulyat
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Refresh browser window automatically (only when the page is open in browser).
+
+<meta http-equiv="refresh" content="10; url=pay">
+
+Or
+		
+$url = $_SERVER ['REQUEST_URI'];
+header ( "Refresh: 10; URL=$url" );
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+DROP TABLE IF EXISTS `bits`;
+CREATE TABLE IF NOT EXISTS `bits` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `user_id` int(11) NOT NULL,
+  `expected_satoshis` bigint(20) NOT NULL,
+  `actual_satoshis` bigint(20) NOT NULL,
+  `owed` bigint(20) NOT NULL,
+  `total` bigint(20) NOT NULL,
+  `confirmations` int(11) NOT NULL,
+  `status` enum('new','pending','confirmed_wrong_amount','confirmed','complete') COLLATE latin1_general_ci NOT NULL,
+  `email` enum('sent','not_sent','','') COLLATE latin1_general_ci NOT NULL,
+  `address` varchar(255) COLLATE latin1_general_ci NOT NULL,
+  `cus_address` varchar(255) COLLATE latin1_general_ci NOT NULL,
+  `timestamp` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=11 DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
+
+--
+-- Dumping data for table `bits`
+--
+
+INSERT INTO `bits` (`id`, `user_id`, `expected_satoshis`, `actual_satoshis`, `owed`, `total`, `confirmations`, `status`, `email`, `address`, `cus_address`, `timestamp`) VALUES
+(1, 0, 0, 0, 0, 0, 0, 'new', 'not_sent', 'msfZ3bJoBND58vN5nriEd5cbfQun4vQXAY', 'hhhhhhhhhhh', '2018-04-10 22:12:01'),
+(2, 0, 0, 0, 0, 0, 0, 'new', 'not_sent', 'mtuKF9hCdYppyrrL8HUb6HEEdvvWvgTW9w', 'ertyuctfytfsr', '2018-04-10 22:11:40'),
+(3, 0, 0, 0, 0, 0, 0, 'new', 'not_sent', 'n4DZP8BKhk7vedDjPokZDEFXFaJUWdAhEX', '', '2018-04-10 22:11:22');
+
+
+https://blockchain.info/rawaddr/1ApP6sEqy72BKitTjtwsJbJUsUCoXciJV8
+
+
+https://blockchain.info/unspent?active=1ApP6sEqy72BKitTjtwsJbJUsUCoXciJV8
+
+
+https://test-insight.bitpay.com/address/
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+https://insight.bitpay.com/api/addr/3NmuhBA3RqV56hD6QtwrAeAUqhQrrnyGkG/utxo
+
+https://test-insight.bitpay.com/api/addr/muASvQcQjLM76edzz2Wh2sYiLEu3QkZrWo/utxo
+
+Balance
+https://insight.bitpay.com/api/addr/1PL96RyWciEdZY2155Fe4CdKUMUMiXnXGY/balance
+https://test-insight.bitpay.com/api/addr/mvYHPxK1pbM4zaUNfMPRnHW5mdvpYcxKSD/balance
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+PHP - Get bool to echo false when false
+echo $bool_val ? 'true' : 'false';
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+<?php
+function updater($value,$id){
+    // Create connection
+    $conn = new mysqli( 'localhost' , 'user_name' , 'pass' ,'data_base_name' );
+    $value =mysqli_real_escape_string($conn,$value);
+    $id =mysqli_real_escape_string($conn,$id);
+    // Check connection
+
+    if ($conn->connect_error) {
+        die("Connection failed: " . $conn->connect_error);
+    }   
+    $sql = "UPDATE table_name SET name='{$value}' WHERE id='{$id}'";	<--------- no good use prepared statement!
+    if ($conn->query($sql) === TRUE) {
+        echo "Record updated successfully";
+    } else {
+        echo "Error updating record: " . $conn->error;
+    }
+    $conn->close();
+}   
+
+if(isset($_POST['name'])){
+    updater($_POST['name'],$_POST['id'])
+}
+?>
+
+<!DOCTYPE html>
+<html>
+<header>
+</header>
+<body>
+<form action="" method="post" style="height:50px;width:50px;">
+    <input type="hidden" name="id" value="1" />           
+    <input type="text" name="name" /><br><br>
+    <input type="submit" /><br/>
+</form>
+</body>
+</html>
+
+~~~~~~~~~~~~~~~~~~~ prepared statement ~~~~~~~~~~~~~~~~~~~
+https://websitebeaver.com/prepared-statements-in-php-mysqli-to-prevent-sql-injection
+function updater($value,$id) {
+    // Create connection
+   $conn = new mysqli( 'localhost' , 'user_name' , '' , 'data_base_name' );
+    // Check connection
+   if ($conn->connect_error) {
+       die("Connection failed: " . $conn->connect_error);
+   }
+   $sql = "UPDATE table_name SET name = ? WHERE id= ?";	<--------- no good use prepared statement.
+   $update = $conn->prepare($sql);
+   $update->bind_param('si', $value, $id);
+   $update->execute();
+   if ($update->affected_rows > 0) {
+       echo "Record updated successfully";
+   } else {
+       echo "Error updating record: " . $conn->error;
+   }
+}
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+mwd6YHJuCdVVhnAqfY2nR7oE3qD9wGHWKV
+mqDsWp6j2HwceUrub8Q4XtMeA7HqJiywsT
+mrczDHqXzGM8ycwjTMExzzWKpfQ76oCeMA
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Install composer
+brew install composer
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+http://goqr.me/
+https://api.qrserver.com/v1/create-qr-code/?size=300x300&data= 1PL96RyWciEdZY2155Fe4CdKUMUMiXnXGY
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+QR code
+Bitcoin address only
+bitcoin:mjYvpHJhQhjA6J6G8Q9sNKk9LaiC5hWAre
+
+Bitcoin address specific amount
+bitcoin:mjYvpHJhQhjA6J6G8Q9sNKk9LaiC5hWAre?amount=0.00050000
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+<img  src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=<?php echo $msg;?>">
+
+Insert php into html:
+<img src="qr/php/qr_img.php?d=<?=$qr?>&s=6">
+<img src="qr/php/qr_img.php?d=<?php echo $da;?>&s=6">
+
+<?php echo "<img src='qr/php/qr_img.php?d=$da&s=5'>";
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Get php file name:
+$_SERVER["SCRIPT_NAME"]=>"/bits/pay.php"
+Or
+$_SERVER["PHP_SELF"]
+
+background: #233354;
+
+<link href="https://fonts.googleapis.com/css?family=Cormorant Unicase" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="styles.css" />
+
+
+
+
+	<!-- Histats.com  START  (aync)-->
+	<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4027956,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+	<noscript>
+		<a href="/" target="_blank"><img
+			src="//sstatic1.histats.com/0.gif?4027956&101" alt="stats counter"
+			border="0"></a>
+	</noscript>
+	<!-- Histats.com  END  -->
+
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Holiday
+2/7/18 - 20/7/18
+13/06/18 - 20/06/18
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+height=50 width=50
+
+<div class="g-recaptcha"
+							data-sitekey="6Lc8Fj4UAAAAACNo8gV5xijRmncClcC7RgoJcPti"></div>
+
+******************
+
+Check connections MYSQL
+https://dev.mysql.com/doc/refman/8.0/en/show-processlist.php
+SHOW PROCESSLIST;
+
+******************
+
+$city = mysqli_real_escape_string($link, $city);
+
+556617248
+
+$sql
+
+full_name, user_email, pwd, address, tel, fax, website, date, users_ip, activation_code, country, user_name
+
+full_name, user_name, user_email, pwd, address, country, tel, fax, website, date, users_ip, activation_code
+
+full_name
+address
+country
+tel
+fax
+web
+user_name
+user_email
+pwd
+pwd2
+g-recaptcha-response
+doRegister
+
+
+array(12) { ["full_name"]=> string(15) "Alexander Lisak" ["address"]=> string(13) "5 Mendip Walk" ["country"]=> string(2) "UK" ["tel"]=> string(11) "07531953527" ["fax"]=> string(0) "" ["web"]=> string(0) "" ["user_name"]=> string(5) "admin" ["user_email"]=> string(21) "alexlisak@hotmail.com" ["pwd"]=> string(5) "11111" ["pwd2"]=> string(5) "11111" ["g-recaptcha-response"]=> string(484) "03AJpayVGfaldnYHWj8gSQXbgYR-UQjoqCvkh_BncSpSf1bEDBWY365nXq2f6-8ZUi3aFPupnDeb1XZkFSem6nZ_WrrBEzT2o6Wlvsr9RKbmHEV-9z2YqFhoRuZo1iiw2ciDC7swEIdZPVxfELMxdwfyQSY5RGMj8Qi24Lo3gW577yW3hSg5jhX9mN2g0uzj71QwTxLIaAZD6aplF-_C2Bn08EbpLCiiPnO1TH71brIly4TLSXToJ810arWOdoDQd0VaCK63KogbXSicJ_VXEDoPQCJLJxf7YOSxPgC3rtqNLo2UDC-VAco1VwuWmdUA3Fl0DOhyzpJy4q4IkPw87fAQ4EU1FBlidibZiRTqMpYWq6z5ctMBvf65WLKEWVwsyH6XvZyIheplevR-8MhEzGSRf5jAXTf4VIrebCwQAGI1kTwkLzRxv2a8ElKVAJ9gFlgkrSwsOu-Q7ho_9rckeZRFVfwdLd21o16g" ["doRegister"]=> string(8) "Register" }
+
+
+
+4403333361248
+
+~~~~~~~~~~~~~~~~~~
+
+Google Chrome not loading external stylesheet.css
+http://www.webtrafficexchange.com/solved-google-chrome-not-loading-external-stylesheetcss
+
+~~~~~~~~~~~~~~~~~~
+                            <?php
+                            for ($i = 0; $i < $num; $i++) {
+                                $address = $arr_row [$i] [address];
+                                $owed = $arr_row [$i] [owed];
+                                $owed_btc = satoshi_to_btc($owed);
+
+                                echo "<input name=\"address\" type=\"hidden\" value=\"$address\">";
+                                echo "<input name=\"owed\" type=\"hidden\" value=\"$owed_btc\">";
+                                echo "<input name=\"user_id\" type=\"hidden\" value=\"$user_id\">";
+                                echo "<p><label for=\"owed\">$owed_btc <span class=\"required\">*</span></label></p>";
+                                echo "<p><input name=\"pay_owed_name\" type=\"submit\" id=\"pay_owed\" value=\"pay\"></p>";
+                            }
+                            ?>
+
+
+Pershotravens'k
+Першотравенськ
+Dnipropetrovsk Oblast
+Ukraine
+52800
+
+
+
+
+
+Array ( 
+[0] => Array ( [0] => n4iLELHniQbon7RkfURKzwMNV6NzBZqnvo [1] => 40000 ) 
+[1] => Array ( [0] => mu6LrUFzn5gNQP7wiGdEgwQo2de9Lwt9z6 [1] => 30000 ) 
+)
+
+Array ( 
+
+
+
+[0] => Array ( [address] => n4iLELHniQbon7RkfURKzwMNV6NzBZqnvo [owed] => 40000 ) 
+[1] => Array ( [address] => mu6LrUFzn5gNQP7wiGdEgwQo2de9Lwt9z6 [owed] => 30000 ) 
+)
+
+ <div class="divbg_innerpage">
+                        <h3>Purchased</h3>
+                        <?php
+                        for ($i = 0; $i < $confirmed_num; $i++) {
+
+                            $actual_satoshis = $confirmed_arr [$i] [0];
+                            $gvb = $actual_satoshis / $GVB_price;
+                            $paytime = $confirmed_arr [$i] [1];
+                            ?>
+                            <p><label for="owed"><?= $gvb . " GVB " . $paytime ?></label></p>
+                            <?php
+                        } ?>
+                    </div>
+
+
+
+Venus Angelic
+
+<div class="row">
+						<div class="item last">
+							<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+								<span><strong>2 Years</strong></span>
+						</div>
+							<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 text-center">
+								<i class="fa fa-btc"></i>&nbsp;<span id="repayment_profit_btc_2year">0.69824500</span>
+							</div>
+							<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 text-center">
+								<i class="fa fa-usd"></i>&nbsp;<span id="repayment_profit_usd_2year"> 422.16</span>
+							</div>
+						</div>
+					</div>
+
+UNCONFIRMED TRANSACTION
+
+
+<a class="forgotwindow sign_btn" href="forgot">Lost your password?</a>
+
+Ulia mark 10, 
+Olia eva 8, nicka 5
+Inna veronica 3 or 4
+https://eo.trade/
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+httrack "https://eo.trade/" -O "/tmp/www.all.net"
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+76893
+http://www.blockexplorer.com/address/mjzaR81Kh6GrXoDk4zJtyVWmpPq8LLTEoH
+generate hd wallet
+Pre-generating Bitcoin addresses
+
+sudo brew install pywallet
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+install Intellij
+1 Intellij
+2 Git
+3 JDK
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+MAKE PAYMENT
+This is your unique deposit address. Once funds are received in this address your balance will be updated shortly.
+PAY WITH QR CODE
+OR
+PAY TO ADDRESS BELOW USING YOUR WALLET APP
+1AwLBdXHiF4XGBHHU4URcR43TfaRUGQBGT
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+get excange rates
+https://blockchain.info/ticker
+https://blockchain.info/tobtc?currency=USD&value=1
+
+~~~~~~~~~~~~~~~~~
+.htaccess:
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^\.]+)$ $1.php [NC,L]
+
+RewriteCond %{HTTP_HOST} bitscharity\.com [NC]
+RewriteCond %{SERVER_PORT} 80
+RewriteRule ^(.*)$ https://bitscharity.com/$1 [R,L]
+~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~
+about.php
+
+~~~~~~~~~~~~~~~~~
+chearch database
+SELECT * FROM `bits` WHERE `address` LIKE 'mqRZfzzCnJqjR99744uK9T7zP2MTwAL94b'
+~~~~~~~~~~~~~~~~~
+
+<?php
+include 'dbc.php';
+?>
+<?php
+include 'footer.php';
+?>
+
+&copy; 2018 GVB Inc. All rights reserved
+&copy; 2018 GVB Inc. All rights reserved <?= $newpayment >
+
+https://test-insight.bitpay.com/api/addr/n11RPD14wEoowaXNGUdhFBj3ZWyj51uLjH/utxo
+https://test-insight.bitpay.com/api/addr/miKwcVGXWfwhREdJZWXDeK4fA6fboGB8hV/balance
+
+~~~~~~~~~~~~~~~~~
+install xdebugger
+https://xdebug.org/wizard.php
+https://chrome.google.com/webstore/detail/xdebug-helper/eadndfjplgieldjbigjakmdgkmoaaaoc/related
+
+~~~~~~~~~~~~~~~~~
+<p>1 USD = <?= $usd_in_btc ?> BTC</p>
+<p>1 BTC = <?= 1 / $usd_in_btc ?> USD</p>
+0.070288887326914
+0.92971111267309
+14208.495109422
+UPDATE bits SET expected_satoshis=1, actual_gvb=2, owed_gvb=3,  payment='a' WHERE id=3;
+
+SELECT SUM(actual_gvb) FROM bits WHERE user_id=1;

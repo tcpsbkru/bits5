@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="200" height="200" viewBox="0 0 200 200">
+    <defs>
+        <circle id="a" cx="100" cy="100" r="100"/>
+        <rect id="b" width="114.9" height="95.75" rx="4"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <g>
+            <use fill="#FFF" xlink:href="#a"/>
+            <circle cx="100" cy="100" r="98.5" stroke="#829AAF" stroke-width="3"/>
+        </g>
+        <g transform="translate(43 52)">
+            <use fill="#FFF" xlink:href="#b"/>
+            <rect width="113.9" height="94.75" x=".5" y=".5" stroke="#B5BCC5" rx="4"/>
+            <path fill="#F2F8FC" d="M3.99 6.797c0-1.11.892-2.01 1.995-2.01H114.9v88.156c0 1.11-.892 2.01-1.996 2.01H3.99V6.796z" style="mix-blend-mode:multiply"/>
+            <rect width="30.321" height="6.383" x="11.171" y="80.59" fill="#FFF" rx="2"/>
+            <path fill="#4C6F8C" d="M75.004 57.45v9.575l2.394-2.394 1.995 3.99h.798s.515-.519.399-.798c-.549-1.317-1.995-3.99-1.995-3.99h2.793l-6.384-6.383z"/>
+            <path stroke="#4C6F8C" stroke-linecap="round" d="M94.154 51.865h3.99M11.969 51.865h3.99M96.15 49.87v3.99M11.969 57.45h89.367M11.57 57.051v.798M101.735 57.051v.798M93.755 57.051v.798M77.797 57.051v.798M74.605 57.051v.798M50.668 57.051v.798M45.88 57.051v.798M29.124 57.051v.798M37.901 57.051v.798M78.994 51.865h3.99M75.004 51.865H76.6M46.28 51.865h3.191M29.523 51.865h4.788M51.067 51.865h6.383M38.3 51.865h3.192"/>
+            <path stroke="#D4D7DE" stroke-linecap="round" d="M11.17 12.767H38.3M11.17 20.746h94.953M11.17 23.14h93.357M11.17 25.533h94.155M11.17 27.927h94.953M11.17 30.32h91.762M11.17 33.114h93.357M11.17 35.507h53.461"/>
+        </g>
+    </g>
+</svg>

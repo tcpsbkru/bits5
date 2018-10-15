@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="200" height="200" viewBox="0 0 200 200">
+    <defs>
+        <circle id="a" cx="100" cy="100" r="100"/>
+        <path id="c" d="M0 0h116v100H0z"/>
+        <path id="d" d="M10 99h14v5H10z"/>
+        <path id="e" d="M90 99h14v5H90z"/>
+        <path id="f" d="M10 10h96v80H10z"/>
+        <circle id="g" cx="98" cy="18" r="3"/>
+        <circle id="h" cx="98" cy="82" r="3"/>
+        <path id="i" d="M7 22h7v10H7z"/>
+        <path id="j" d="M7 68h7v10H7z"/>
+        <circle id="k" cx="56" cy="50" r="26"/>
+        <circle id="l" cx="56" cy="50" r="21"/>
+        <circle id="m" cx="56" cy="50" r="16"/>
+        <circle id="n" cx="56" cy="50" r="11"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <mask id="b" fill="#fff">
+            <use xlink:href="#a"/>
+        </mask>
+        <use fill="#FFF" xlink:href="#a"/>
+        <circle cx="100" cy="100" r="98.5" stroke="#829AAF" stroke-width="3"/>
+        <g mask="url(#b)">
+            <g transform="translate(42 48)">
+                <use fill="#FFF" xlink:href="#c"/>
+                <path stroke="#B5BCC5" d="M.5.5h115v99H.5z"/>
+            </g>
+            <g transform="translate(42 48)">
+                <use fill="#FFF" xlink:href="#d"/>
+                <path stroke="#B5BCC5" d="M10.5 99.5h13v4h-13z"/>
+            </g>
+            <g transform="translate(42 48)">
+                <use fill="#FFF" xlink:href="#e"/>
+                <path stroke="#B5BCC5" d="M90.5 99.5h13v4h-13z"/>
+            </g>
+            <path fill="#F2F8FC" d="M46 52h111v95H46z"/>
+            <g transform="translate(42 48)">
+                <use fill="#FFF" xlink:href="#f"/>
+                <path stroke="#4C6F8C" d="M10.5 10.5h95v79h-95z"/>
+            </g>
+            <g transform="translate(42 48)">
+                <use fill="#FFF" xlink:href="#g"/>
+                <circle cx="98" cy="18" r="2.5" stroke="#B5BCC5"/>
+            </g>
+            <g transform="translate(42 48)">
+                <use fill="#FFF" xlink:href="#h"/>
+                <circle cx="98" cy="82" r="2.5" stroke="#B5BCC5"/>
+            </g>
+            <g transform="translate(42 48)">
+                <use fill="#FFF" xlink:href="#i"/>
+                <path stroke="#4C6F8C" d="M7.5 22.5h6v9h-6z"/>
+            </g>
+            <g transform="translate(42 48)">
+                <use fill="#FFF" xlink:href="#j"/>
+                <path stroke="#4C6F8C" d="M7.5 68.5h6v9h-6z"/>
+            </g>
+            <path fill="#F2F8FC" d="M53 74h2v5h-2zM53 120h2v5h-2z"/>
+            <g transform="translate(42 48)">
+                <use fill="#FFF" xlink:href="#k"/>
+                <circle cx="56" cy="50" r="25.5" stroke="#4C6F8C"/>
+            </g>
+            <g transform="translate(42 48)">
+                <use fill="#FFF" xlink:href="#l"/>
+                <circle cx="56" cy="50" r="20.5" stroke="#4C6F8C"/>
+            </g>
+            <g transform="translate(42 48)">
+                <use fill="#FFF" xlink:href="#m"/>
+                <circle cx="56" cy="50" r="15.5" stroke="#4C6F8C"/>
+            </g>
+            <g transform="translate(42 48)">
+                <use fill="#4C6F8C" xlink:href="#n"/>
+                <circle cx="56" cy="50" r="10.5" stroke="#4C6F8C"/>
+            </g>
+            <g stroke="#4C6F8C" stroke-linecap="square">
+                <path d="M82.5 98.5h31M98 113V83"/>
+            </g>
+            <g stroke="#4C6F8C">
+                <path d="M87.393 109.314l21.92-21.92M108.607 108.607L87.393 87.393"/>
+            </g>
+            <circle cx="8" cy="8" r="8" fill="#FFF" transform="translate(90 90)"/>
+        </g>
+    </g>
+</svg>

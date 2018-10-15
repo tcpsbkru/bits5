@@ -1,0 +1,5 @@
+Server:		home715328321.1and1-data.host
+Port:		22
+Protocol:	SFTP
+User name:	u91696694
+Password:	Zaichik1

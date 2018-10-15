@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="200" height="200" viewBox="0 0 200 200">
+    <defs>
+        <circle id="a" cx="100" cy="100" r="100"/>
+        <rect id="b" width="115" height="95.833" rx="4"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <g>
+            <use fill="#FFF" xlink:href="#a"/>
+            <circle cx="100" cy="100" r="98.5" stroke="#829AAF" stroke-width="3"/>
+        </g>
+        <g transform="translate(43 52)">
+            <use fill="#FFF" xlink:href="#b"/>
+            <rect width="114" height="94.833" x=".5" y=".5" stroke="#B5BCC5" rx="4"/>
+        </g>
+        <path fill="#F3F8FD" d="M46.993 57.983c0-1.099.894-1.99 1.998-1.99H158v88.253c0 1.1-.894 1.99-1.998 1.99H46.993V57.983z" style="mix-blend-mode:multiply"/>
+        <path stroke="#4C6F8C" stroke-linecap="round" stroke-linejoin="round" d="M48.59 109.891l10.143-4.916 9.128-1.67 11.156 7.792 10.143-6.122 9.128 3.896 11.156-25.048 10.143 16.142 11.156-19.481 9.129-2.227 10.142-3.896"/>
+        <path stroke="#D4D7DE" stroke-linecap="round" d="M48.59 63.98h30.347M48.59 121.48h11.18M83.73 121.48h5.59M48.59 124.674h9.584M83.73 124.674h5.59M48.59 127.868h11.98M85.326 127.868h3.993M48.59 131.063h10.382M85.326 131.063h3.993M48.59 134.257h12.778M86.125 134.257h3.194M109.285 121.48h11.18M144.424 121.48h5.59M109.285 124.674h9.583M144.424 124.674h5.59M109.285 127.868h11.979M146.02 127.868h3.994M109.285 131.063h10.382M146.02 131.063h3.994M109.285 134.257h12.778M146.82 134.257h3.194M135.639 63.98h14.375"/>
+    </g>
+</svg>

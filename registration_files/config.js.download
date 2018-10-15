@@ -1,0 +1,12 @@
+var self_home           = 'https://www.GVB.net';
+var handler_home        = 'wss://h-www.GVB.net';
+
+var config = {
+    dashboard:              self_home + '/dashboard',
+    ws_url:                 handler_home + '/app',
+    GVB_page:           'https://ico.GVB.net/',
+    GVB_suport_link:    'support@GVB.net',
+    GVB_FAQ_link:       'FAQ Link',
+    unused:                 null,
+    recaptcha:              '6LcHKwsUAAAAAEwgF6tIkxpiXWUGNWzFoAVzRRh1'
+};

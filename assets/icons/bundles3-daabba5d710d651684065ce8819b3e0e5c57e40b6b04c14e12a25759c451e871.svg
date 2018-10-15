@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="200" height="200" viewBox="0 0 200 200">
+    <defs>
+        <circle id="a" cx="100" cy="100" r="100"/>
+        <path id="c" d="M35.385 96.503H3.218A3.216 3.216 0 0 1 0 93.293V3.21A3.215 3.215 0 0 1 3.218 0h32.167"/>
+        <path id="e" d="M0 0h35.385v96.503H0z"/>
+        <path id="g" d="M0 0h35.385m0 96.503H0"/>
+        <path id="h" d="M0 0h32.166a3.216 3.216 0 0 1 3.219 3.21v90.083a3.215 3.215 0 0 1-3.219 3.21H0"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <mask id="b" fill="#fff">
+            <use xlink:href="#a"/>
+        </mask>
+        <use fill="#FFF" xlink:href="#a"/>
+        <circle cx="100" cy="100" r="98.5" stroke="#829AAF" stroke-width="3"/>
+        <g mask="url(#b)">
+            <g transform="translate(43 52)">
+                <mask id="d" fill="#fff">
+                    <use xlink:href="#c"/>
+                </mask>
+                <use fill="#FFF" xlink:href="#c"/>
+                <path stroke="#B5BCC5" d="M34.885 96.003V.5H3.218A2.715 2.715 0 0 0 .5 3.21v90.083a2.716 2.716 0 0 0 2.718 2.71h31.667z"/>
+                <path fill="#FFF" stroke="#B5BCC5" stroke-dasharray="2,3" stroke-linecap="square" d="M34.983 0v96.503M34.983 0v96.503" mask="url(#d)"/>
+                <path fill="#F2F8FC" d="M4.021 6.83a2.01 2.01 0 0 1 2.01-2.005h29.354v88.87a2.01 2.01 0 0 1-2.01 2.004H4.021V6.83z" mask="url(#d)" style="mix-blend-mode:multiply"/>
+                <path stroke="#D4D7DE" stroke-linecap="round" d="M6.836 24.528v58.706M47.85 24.528v65.14M88.864 24.528v65.14M6.836 83.636h123.042M6.836 65.14h123.042M6.836 43.427h123.042" mask="url(#d)"/>
+                <path stroke="#4C6F8C" stroke-linecap="round" d="M7.238 83.636L48.54 51.224l40.685 3.215 40.25-35.138" mask="url(#d)"/>
+            </g>
+            <g transform="translate(82.406 52)">
+                <mask id="f" fill="#fff">
+                    <use xlink:href="#e"/>
+                </mask>
+                <use fill="#FFF" xlink:href="#e"/>
+                <path fill="#FFF" stroke="#B5BCC5" stroke-dasharray="2,3" stroke-linecap="square" d="M.402 0v96.503M34.983 0v96.503" mask="url(#f)"/>
+                <g stroke-linecap="square" mask="url(#f)">
+                    <use fill="#FFF" xlink:href="#g"/>
+                    <path stroke="#B5BCC5" d="M0 .5v-1h35.385v1H0zm0-1h35.385v1H0v-1zm35.385 96.503v1H0v-1h35.385zm0 1H0v-1h35.385v1z"/>
+                </g>
+                <path fill="#F2F8FC" d="M4.021 4.825h31.364v90.874H4.021z" mask="url(#f)" style="mix-blend-mode:multiply"/>
+                <path stroke="#D4D7DE" stroke-linecap="round" d="M-34.178 24.528v65.14M4.423 24.528v58.706M47.85 24.528v65.14M-34.178 83.636H88.864M-34.178 65.14H88.864M-34.178 43.427H88.864" mask="url(#f)"/>
+                <path stroke="#4C6F8C" stroke-linecap="round" d="M-36.189 87.657L4.894 55.244l24.625 3.216 41.25-35.138" mask="url(#f)"/>
+            </g>
+            <g transform="translate(122.615 52)">
+                <mask id="i" fill="#fff">
+                    <use xlink:href="#h"/>
+                </mask>
+                <use fill="#FFF" xlink:href="#h"/>
+                <path stroke="#B5BCC5" d="M.5.5v95.503h31.666c1.501 0 2.719-1.214 2.719-2.71V3.21A2.716 2.716 0 0 0 32.166.5H.5z"/>
+                <path fill="#FFF" stroke="#B5BCC5" stroke-dasharray="2,3" stroke-linecap="square" d="M.402 0v96.503" mask="url(#i)"/>
+                <path fill="#F2F8FC" d="M4.021 4.825h31.364v90.874H4.021z" mask="url(#i)" style="mix-blend-mode:multiply"/>
+                <path stroke="#D4D7DE" stroke-linecap="round" d="M-94.493 24.528v65.14M-53.479 24.528v65.14M4.423 24.528v58.706M-94.493 83.636H28.549M-94.493 65.14H28.549M-94.493 43.427H28.549" mask="url(#i)"/>
+                <path stroke="#4C6F8C" stroke-linecap="round" d="M-94.09 90.874l41.301-32.413 40.685 3.215 40.25-35.138" mask="url(#i)"/>
+                <path stroke="#4C6F8C" stroke-linecap="round" d="M20.098 33.3l5.243-9.24 5.243 9.24" mask="url(#i)" transform="rotate(53 25.341 28.68)"/>
+            </g>
+        </g>
+    </g>
+</svg>

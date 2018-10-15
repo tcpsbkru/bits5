@@ -1,0 +1,25 @@
+﻿.LOG
+31/03/18
+historic moment: downloaded opentcart and coinpayments plugin, bought BTC (£100).
+Uploaded to 1&1 hosting and had a session: a customer sign in, paid (~£6), and coinpayments showed money in. But open card did not update the status of transaction. 
+No good dealing with a third party for bitcoins exposing the IP so trying to create 
+My own bitcoin processing.
+
+06/04/18
+historic moment: Using login2 site created pay.php, pay_customer.php, and pay_cron.php files. Customer signed in, chose the quality of GVB and paid, the system recorded in database: customer ID, expected amount, changed status to pending and customer's Etherium address.
+
+
+06:37 20/08/2018
+Zaichik1.PosholGulyat
+Zaichik1.posholgulyat
+Bitcoin: 0.13704487
+
+5 Mendip walk
+Crawley
+RH11 7JZ
+
+Alexander Lisak
+07531953527
+Zaichik1
+
+alexlisak@hotmail.com
